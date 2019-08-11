@@ -1,4 +1,4 @@
-# Classic Arcade Game Clone Project
+# Udacity Frontend Nanodegree - Classic Arcade Game
 
 ## Table of Contents
 
@@ -18,3 +18,12 @@ For detailed instructions on how to get started, check out this [guide](https://
 ## Contributing
 
 This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+
+## Creators
+    
+    Mohamed Aimane Skhairi
+    skhairimedaimane@gmail.com
+    
+## License
+
+This project is open-sourced software licensed under the [MIT License](./LICENSE).
