@@ -24,9 +24,11 @@ var Engine = (function(global) {
         ctx = canvas.getContext('2d'),
         lastTime;
 
+    const gameContainer = doc.querySelector('#game-container');
+
     canvas.width = 505;
     canvas.height = 606;
-    doc.body.appendChild(canvas);
+    gameContainer.appendChild(canvas);
 
     /* This function serves as the kickoff point for the game loop itself
      * and handles properly calling the update and render methods.
@@ -90,10 +92,10 @@ var Engine = (function(global) {
      * render methods.
      */
     function updateEntities(dt) {
-        allEnemies.forEach(function(enemy) {
+        Game.allEnemies.forEach(function(enemy) {
             enemy.update(dt);
         });
-        player.update();
+        Game.player.update();
     }
 
     /* This function initially draws the "game level", it will then call
@@ -146,14 +148,14 @@ var Engine = (function(global) {
      * on your enemy and player entities within app.js
      */
     function renderEntities() {
-        /* Loop through all of the objects within the allEnemies array and call
+        /* Loop through all of the objects within the Game.allEnemies array and call
          * the render function you have defined.
          */
-        allEnemies.forEach(function(enemy) {
+        Game.allEnemies.forEach(function(enemy) {
             enemy.render();
         });
 
-        player.render();
+        Game.player.render();
     }
 
     /* This function does nothing but it could have been a good place to
