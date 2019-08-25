@@ -1,4 +1,7 @@
-# Udacity Frontend Nanodegree - Classic Arcade Game
+# Udacity Frontend Nanodegree - Classic Arcade Game Project
+
+Project 02 - Build a classic arcade game clone.
+[Demo](https://medaimane.github.io/ufn-project03-arcade-game/)
 
 ## Table of Contents
 
