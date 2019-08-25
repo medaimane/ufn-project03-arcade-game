@@ -15,7 +15,7 @@ Project 02 - Build a classic arcade game clone.
 - Start playing: 
     - using arrow keys to move player sprite.
     - try to reach the sea (top of the game).
-    - at the maintime you need to avoid collisions with the enemies sprite.
+    - while playing you need to avoid collisions with the enemies sprite.
     - the level, score and enemies speed will be augmented as you reach the top.
 
 ## Table of Contents
