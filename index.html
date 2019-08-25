@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Effective JavaScript: Frogger</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Mohamed Aimane Skhairi <skhairimedaimane@gmail.com>">
+    <meta name="description" content="Udacity frontend developer nanodegree, project: classic arcade game clone">
+
+    <!-- Title -->
+    <title>Med Aimane Skhairi | Classic Arcade Game Clone</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Stylesheet & fonts -->
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet prefetch">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <script src="js/resources.js"></script>
+    <div class="container">
+        <header>
+            <h1>Classic Arcade Game Clone</h1>
+        </header>
+
+        <div id="game-container"></div>
+    </div>
+
+    <footer>
+        <p>Made with ❤️ by <a href="https://medaimane.github.io/" target="_blank" rel="noreferrer">Mohamed Aimane
+            Skhairi</a> © 2019</p>
+    </footer>
+
+    <script src="js/utils/resources.js"></script>
+    <script src="js/utils/constants.js"></script>
+    <script src="js/classes/Player.js"></script>
+    <script src="js/classes/Enemy.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/engine.js"></script>
+    <script src="js/core/engine.js"></script>
 </body>
 </html>
