@@ -1,16 +1,9 @@
-const level = initialLevel;
+const startApp = () => {
+    Game.build();
 
-const allEnemies = [
-    new Enemy(),
-    new Enemy(),
-    new Enemy(),
-    new Enemy(),
-    new Enemy(),
-    new Enemy(),
-];
+    document.addEventListener('keyup', e => {
+        Game.player.handleInput(allowedKeys[e.key]);
+    });
+};
 
-const player = new Player();
-
-document.addEventListener('keyup', e => {
-    player.handleInput(allowedKeys[e.key]);
-});
+startApp();

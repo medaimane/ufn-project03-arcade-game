@@ -1,17 +1,16 @@
 class Player {
     constructor() {
         this.sprite = sprites.charCatGirl;
-        this.x = 0;
-        this.y = 0;
+        this.positionX = PLAYER_INITIAL_POSITION_X;
+        this.positionY = PLAYER_INITIAL_POSITION_Y;
     }
 
-    // This class requires an update(), render() and
-    // a handleInput() method.
+    // Update the player's position,
     update(dt) {
     }
 
     render() {
-        ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+        ctx.drawImage(Resources.get(this.sprite), this.positionX, this.positionY);
     }
 
     handleInput(key) {
@@ -36,5 +35,10 @@ class Player {
                 break;
             }
         }
+    }
+
+    resetPosition() {
+        this.positionX = PLAYER_INITIAL_POSITION_X;
+        this.positionY = PLAYER_INITIAL_POSITION_Y;
     }
 }

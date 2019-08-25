@@ -1,4 +1,6 @@
 const INITIAL_LEVEL = 1;
+const PLAYER_INITIAL_POSITION_X = 202;
+const PLAYER_INITIAL_POSITION_Y = 373.5;
 
 const imagesAbsolutePath = 'images/';
 
