@@ -16,6 +16,13 @@ const allowedKeys = {
     ArrowDown: 'ArrowDown',
 };
 
+const allowedKeysCodes = {
+    37: 'left',
+    38: 'up',
+    39: 'right',
+    40: 'down'
+};
+
 const gameDimension = {
     width: 504,
 };
