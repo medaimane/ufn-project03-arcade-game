@@ -1,6 +1,7 @@
 const INITIAL_LEVEL = 1;
 const PLAYER_INITIAL_POSITION_X = 202;
 const PLAYER_INITIAL_POSITION_Y = 373.5;
+const PLAYER_COLLISION_ZONE = 75;
 
 const imagesAbsolutePath = 'images/';
 
@@ -24,5 +25,7 @@ const allowedKeysCodes = {
 };
 
 const gameDimension = {
-    width: 504,
+    WIDTH: 504,
+    TILE_WIDTH: 101,
+    TILE_HEIGHT: 83,
 };

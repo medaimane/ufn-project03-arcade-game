@@ -12,7 +12,7 @@ class Enemy {
         this.updatePositionXBy(dt);
 
         // Refresh enemy
-        if (this.positionX > gameDimension.width) {
+        if (this.positionX > gameDimension.WIDTH) {
             this.refreshEnemy();
         }
 
@@ -32,11 +32,11 @@ class Enemy {
     }
 
     isHitPlayerPositionX(player) {
-        return this.positionX === player.positionX - 75 || this.positionX === player.positionX + 75;
+        return this.positionX > player.positionX - PLAYER_COLLISION_ZONE && this.positionX < player.positionX + PLAYER_COLLISION_ZONE;
     }
 
     isHitPlayerPositionY(player) {
-        return this.positionY === player.positionY - 75 || this.positionY === player.positionY + 75;
+        return this.positionY > player.positionY - PLAYER_COLLISION_ZONE && this.positionY < player.positionY + PLAYER_COLLISION_ZONE;
     }
 
     refreshEnemy() {
@@ -52,13 +52,13 @@ class Enemy {
     }
 
     getRandomPositionY() {
-        const positions = [41.5, 124.5, 207.5];
-        const index = Math.floor(Math.random() * positions.length);
-        return positions[index];
+        const somePositions = [41.5, 124.5, 207.5];
+        const index = Math.floor(Math.random() * somePositions.length);
+        return somePositions[index];
     }
 
     getRandomPositionX(isStartGame = true) {
-        return isStartGame ? Math.floor((Math.random() * 504) + -90) : -90;
+        return isStartGame ? Math.floor((Math.random() * gameDimension.WIDTH) + -90) : -90;
     }
 
     getSpeed(level) {

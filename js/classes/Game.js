@@ -2,9 +2,12 @@ class Game {
     static player = null;
     static allEnemies = [];
     static level = INITIAL_LEVEL;
+    static score = 0;
 
     static build(numberOfEnemies = 5) {
-        this.renderGameLevelNumber();
+        this.renderLevelNumber();
+        this.renderScore();
+
         this.player = new Player();
 
         let i = 0;
@@ -16,7 +19,9 @@ class Game {
 
     static reset() {
         this.level = INITIAL_LEVEL;
-        this.renderGameLevelNumber();
+        this.score = 0;
+        this.renderLevelNumber();
+        this.renderScore();
         this.resetPlayerPosition();
         this.resetAllEnemiesPosition();
     }
@@ -29,12 +34,18 @@ class Game {
         this.allEnemies.forEach(enemy => enemy.resetPosition());
     }
 
-    static renderGameLevelNumber() {
+    static renderLevelNumber() {
         document.querySelector('.level > span').textContent = `${this.level}`;
     }
 
-    static startNextGameLevel() {
+    static renderScore() {
+        document.querySelector('.score > span').textContent = `${this.score}`;
+    }
+
+    static startNextLevel() {
         this.level += 1;
-        this.renderGameLevelNumber();
+        this.score += 10 * this.level;
+        this.renderLevelNumber();
+        this.renderScore();
     }
 }
