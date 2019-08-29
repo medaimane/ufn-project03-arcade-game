@@ -1,7 +1,13 @@
 # Udacity Frontend Nanodegree - Classic Arcade Game Project
 
-Project 02 - Build a classic arcade game clone.
+Project 03 - Build a classic arcade game clone.
 [Demo](https://medaimane.github.io/ufn-project03-arcade-game/)
+
+## Table of Contents
+
+- [Instructions](#instructions)
+- [Description](#description)
+- [Contributing](#contributing)
 
 ## Instructions
 
@@ -17,11 +23,6 @@ Project 02 - Build a classic arcade game clone.
     - try to reach the sea (top of the game).
     - while playing you need to avoid collisions with the enemies sprite.
     - the level, score and enemies speed will be augmented as you reach the top.
-
-## Table of Contents
-
-- [Instructions](#instructions)
-- [Contributing](#contributing)
 
 ## Description
 
